@@ -1,0 +1,78 @@
+.planos {
+    text-align: center;
+    background-color: var(--cinza-claro);
+}
+
+.plano {
+    display: inline-block;
+    background-color: var(--branco);
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 0.5rem 2rem 0.5rem;
+    /* padding-bottom: 2rem; */
+    box-shadow: 0 2px 10px 2px #00000010;
+}
+
+.plano--start {
+    color: var(--plano-start);
+}
+
+.plano--ultra {
+    color: var(--plano-ultra);
+}
+
+.plano--mega {
+    color: var(--plano-mega);
+}
+
+.plano__titulo {
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--azul-claro );
+}
+
+.plano__preco {
+    font-size: 3rem;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+}
+
+.plano__itens {
+    text-align: left;
+    color: var(--cor-fonte);
+    padding-left: 35px;
+}
+
+.plano__btn {
+    display: block;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: inherit;
+    align-self: center;
+    width: 75%;
+    margin: 30px auto;
+}
+
+.plano__btn:hover, .plano__btn:active {
+    color: var(--branco);
+}
+
+.plano:nth-of-type(1) .plano__btn:hover, .plano:nth-of-type(1) .plano__btn:focus {
+    background-color: var(--plano-start);
+}
+
+.plano:nth-of-type(2) .plano__btn:hover, .plano:nth-of-type(2) .plano__btn:focus {
+    background-color: var(--plano-ultra);
+}
+
+.plano:nth-of-type(3) .plano__btn:hover, .plano:nth-of-type(3) .plano__btn:focus {
+    background-color: var(--plano-mega);
+}

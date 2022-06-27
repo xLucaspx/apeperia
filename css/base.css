@@ -14,9 +14,9 @@
 	--bg-rodape: #333;
 	--bg-apresentacao-mobile: #00161C;
 
-	--planos-cartao-start: #56CCF2;
-	--planos-cartao-ultra: #B04CD9;
-	--planos-cartao-mega: #E33B3B;
+	--plano-start: #56CCF2;
+	--plano-ultra: #B04CD9;
+	--plano-mega: #E33B3B;
 }
 
 body {
@@ -55,9 +55,11 @@ body {
 
 .btnPadrao {
 	text-align: center;
-	width: 350px;
+	width: 100%;
+	max-width: 350px;
 	border-radius: 5px;
 	font-size: 1.2rem;
+	font-weight: 700;
 	padding: 1rem 2rem;
 	cursor: pointer;
 	transition: 0.5s ease-in-out;
