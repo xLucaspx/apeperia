@@ -1,0 +1,75 @@
+:root {
+	--fonte-titulo: "Montserrat", sans-serif;
+
+  --branco: #FFF;
+  --azul-claro: #DFE3E5;
+	--azul-escuro: #103D4A;
+	--vermelho-escuro: #B72E2E;
+	--cinza-claro: #F7F4F4;
+	--cinza-medio: #D9D9D9;
+	--cinza-escuro: #4F4C4C;
+			
+	--cor-links: #0084FF;
+	--cor-fonte: #666;
+	--bg-rodape: #333;
+	--bg-apresentacao-mobile: #00161C;
+
+	--planos-cartao-start: #56CCF2;
+	--planos-cartao-ultra: #B04CD9;
+	--planos-cartao-mega: #E33B3B;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.pularNavegacao {
+	display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  color: transparent;
+  position: absolute;
+}
+
+.pularNavegacao:focus {
+  transition: 0.5s;
+  text-indent: 10px;
+  white-space: initial;
+  overflow: initial;
+  width: 350px;
+  height: 25px;
+  font-size: 18px;
+  color: #fff;
+	text-decoration: none;
+  background-color: #B72E2E;
+  font-weight: 700;
+}
+
+.container {
+	padding: 3.5rem 5%;
+}
+
+.btnPadrao {
+	text-align: center;
+	width: 350px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+}
+
+.btnPadrao:hover {
+	transform: scale(1.1);
+}
+
+.tituloPadrao {
+	font-family: var(--fonte-titulo);
+	margin-bottom: 1rem;
+	color: var(--cinza-escuro);
+	text-align: center;
+	text-transform: uppercase;
+}

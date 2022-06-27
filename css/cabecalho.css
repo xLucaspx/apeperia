@@ -1,0 +1,25 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    padding-bottom: .75rem;
+    position: absolute;
+}
+
+.cabecalho__lista {
+    display: flex;
+    margin-top: 15px;
+}
+
+.cabecalho__item {
+    margin: 0 15px;
+}
+
+.cabecalho__link {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.1rem;
+}

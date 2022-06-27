@@ -1,0 +1,39 @@
+.apresentacao {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+  color: var(--branco);
+  background: url("../img/bg-intro.jpg") no-repeat center / cover;
+	padding: 13rem 2rem 2.5rem 2rem;
+	padding-top: 13rem;
+	padding-bottom: 2.5rem;
+}
+
+.apresentacao__titulo {
+	font-family: var(--fonte-titulo);
+	font-size: 3.25rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.apresentacao__texto {
+	font-size: 1.3rem;
+	max-width: 750px;
+	margin-top: 1.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.apresentacao__btn {
+	background-color: transparent;
+	border: 1px solid var(--branco);
+	margin: 1.5rem auto;
+	color: var(--branco);
+}
+
+.apresentacao__btn:hover, .apresentacao__btn:focus {
+	background-color: var(--branco);
+	color: var(--cinza-escuro);
+}
