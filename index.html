@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Apeperia</title>
-  <meta name="description" content="Somos a Apeperia, uma startup inovadora e comprometida. Nos dedicamos a comparar e montar aplicativos mobile e web para pequenas e médias empresas">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
+	<title>Apeperia</title>
+	<meta name="description" content="Somos a Apeperia, uma startup inovadora e comprometida. Nos dedicamos a comparar e montar aplicativos mobile e web para pequenas e médias empresas">
+	<link rel="icon" href="icon.svg" type="image/svg+xml">
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/cabecalho.css">
 	<link rel="stylesheet" href="css/apresentacao.css">
 	<link rel="stylesheet" href="css/sobre.css">
+	<link rel="stylesheet" href="css/diferenciais.css">
 </head>
 <body>
-  <a href="#conteudoPrincipal" class="pularNavegacao">Pular para o conteúdo principal</a>
-  <header class="cabecalho container">
-    <a href="index.html" class="cabecalho__logo" title="Home da Apeperia">
-      <img src="img/logo-apeperia.svg" alt="Logo da Apeperia" width="205" height="59">
-    </a>
+	<a href="#conteudoPrincipal" class="pularNavegacao">Pular para o conteúdo principal</a>
+	<header class="cabecalho container">
+		<a href="index.html" class="cabecalho__logo" title="Home da Apeperia">
+			<img src="img/logo-apeperia.svg" alt="Logo da Apeperia" width="205" height="59">
+		</a>
 
-    <nav class="cabecalho__nav">
-      <ul class="cabecalho__lista">
-        <li class="cabecalho__item"><a href="#sobre" class="cabecalho__link">Sobre</a></li>
-        <li class="cabecalho__item"><a href="#planos" class="cabecalho__link">Planos</a></li>
-        <li class="cabecalho__item"><a href="#destaques" class="cabecalho__link">Destaques</a></li>
-        <li class="cabecalho__item"><a href="#blog" class="cabecalho__link">Blog</a></li>
-        <li class="cabecalho__item"><a href="#institucional" class="cabecalho__link">Institucional</a></li>
-        <li class="cabecalho__item"><a href="#contato" class="cabecalho__link">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="conteudo" role="main">
+		<nav class="cabecalho__nav">
+			<ul class="cabecalho__lista">
+				<li class="cabecalho__item"><a href="#sobre" class="cabecalho__link">Sobre</a></li>
+				<li class="cabecalho__item"><a href="#planos" class="cabecalho__link">Planos</a></li>
+				<li class="cabecalho__item"><a href="#destaques" class="cabecalho__link">Destaques</a></li>
+				<li class="cabecalho__item"><a href="#blog" class="cabecalho__link">Blog</a></li>
+				<li class="cabecalho__item"><a href="#institucional" class="cabecalho__link">Institucional</a></li>
+				<li class="cabecalho__item"><a href="#contato" class="cabecalho__link">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+  	<main class="conteudo" role="main">
 		<section class="apresentacao">
 			<h1 class="apresentacao__titulo" id="conteudoPrincipal">
 				Aplicativos na medida
@@ -47,7 +48,25 @@
 			<button class="apresentacao__btn btnPadrao">
 				Conheça os planos
 			</button>
+		</section> 
+<!-- Fim seção apresentação -->
+		<section class="diferenciais container">
+			<ul class="diferenciais__lista">
+				<li class="diferenciais__item diferenciais__item--tempo">
+					<h2 class="item__titulo">Tempo</h2>
+					<p class="item__texto">Tempo é importante! Trabalhamos em ritmo acelerado, atendendo rigorosamente os prazos.</p>
+				</li>
+				<li class="diferenciais__item diferenciais__item--foco">
+					<h2 class="item__titulo">Foco</h2>
+					<p class="item__texto">Focado no empreendedor, oferecemos serviços de qualidade com preços acessíveis.</p>
+				</li>
+				<li class="diferenciais__item diferenciais__item--especialistas">
+					<h2 class="item__titulo">Especialistas</h2>
+					<p class="item__texto">Equipe especializada, com experiência profissional. Testamos todos os produtos antes do lançamento!</p>
+				</li>
+			</ul>
 		</section>
+		<!-- Fim seção diferenciais -->
   </main>
 </body>
 </html>
