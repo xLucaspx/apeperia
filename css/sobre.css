@@ -1,0 +1,36 @@
+.sobre {
+    display: flex;
+}
+
+.sobre__conteudo {
+    margin-left: 3rem;
+}
+
+.sobre__titulo {
+    text-align: left;
+}
+
+.sobre__texto {
+    margin-bottom: 1.3rem;
+}
+
+.sobre__texto--destaque {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+}
+
+.sobre__texto--divisao {
+    border-bottom: 1px solid var(--cinza-medio);
+    padding-bottom: 2rem;
+}
+
+.sobre__plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.sobre__imagem {
+    margin-left: 3rem;
+}
