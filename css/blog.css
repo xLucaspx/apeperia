@@ -38,6 +38,7 @@
 
 .artigo__titulo {
     font-family: var(--fonte-titulo);
+    font-weight: 700;
     margin: 0.5rem 0;
     font-size: 1.2rem;
 }
@@ -45,6 +46,11 @@
 .artigo__link {
     color: var(--cor-links);
     font-weight: 700;
+}
+
+.artigo__link:hover, .artigo__link:focus {
+    transition: 0.5s;
+    color: var(--azul-escuro);
 }
 
 .artigos__slider {

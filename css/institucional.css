@@ -1,0 +1,45 @@
+.institucional {
+    color: var(--cor-fonte);
+    background-color: var(--cinza-claro);
+    text-align: center;
+}
+
+.institucional__conteudo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.institucional__descricao {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.institucional__endereco {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.institucional__contato {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.institucional__contato-telefone, .institucional__contato-email {
+    color: var(--cor-links);
+    text-decoration: underline;
+}
+
+.institucional__contato-telefone:hover, .institucional__contato-telefone:focus,
+.institucional__contato-email:hover, .institucional__contato-email:focus {
+    transition: 0.5s;
+    color: var(--azul-escuro);
+}
+
+.institucional__video {
+    align-self: flex-end;
+}
