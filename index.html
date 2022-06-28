@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/planos.css">
 	<link rel="stylesheet" href="css/destaques.css">
 	<link rel="stylesheet" href="css/destaques_newsletter.css">
+	<link rel="stylesheet" href="css/blog.css">
 </head>
 <body>
 	<a href="#conteudoPrincipal" class="pularNavegacao">Pular para o conteúdo principal</a>
@@ -49,9 +50,9 @@
 			<h2 class="apresentacao__texto">
 				A Apeperia é uma startup com um jeito inovador de comparar e montar aplicativos mobile e web para pequenas e médias empresas
 			</h2>
-			<button class="apresentacao__btn btnPadrao">
+			<a href="#secaoPlanos" class="apresentacao__btn btnPadrao">
 				Conheça os planos
-			</button>
+			</a>
 		</section> 
 <!-- Fim seção apresentação -->
 		<section class="diferenciais container">
@@ -155,8 +156,53 @@
 				<div class="destaques__newsletter-overlay"></div>
 			</div>
 		</section>
+		<!-- Fim seção destaques -->
+		<section class="blog container" id="secaoBlog">
+			<h2 class="blog__titulo tituloPadrao">Blog</h2>
+			<ul class="blog__artigos">
+				<li class="artigos__item" id="artigo1">
+					<article class="artigo">
+						<img src="img/10-aplicativos-mais-baixados.png" alt="Teclado de computador e um celular" class="artigo__img">
+						<h3 class="artigo__titulo" id="artigo1__titulo">Conheça os 10 aplicativos mais baixados no ano de 2021</h3>
+						<p>
+							Listamos os 10 aplicativos que mais se destacaram no último ano e merecem a sua atenção; mostramos os aplicativos com maior engajamento dos usuários e explicamos por que eles ganharam destaque.<br>
+							<a href="#artigo1" class="artigo__link">Continuar lendo o post 1</a>
+						</p>
+					</article>
+				</li>
+				<li class="artigos__item" id="artigo2">
+					<article class="artigo">
+						<img src="img/ux-usabilidade.jpg" alt="Pessoa utilizando um celular" class="artigo__img">
+						<h3 class="artigo__titulo" id="artigo2__titulo">Usabilidade: entenda os benefícios de treinar sua equipe em UX</h3>
+						<p>
+							Vamos imaginar a seguinte situação: o time de desenvolvedores da sua empresa dedicou bastante tempo à criação de um software, e agora ele está tecnicamente perfeito, pronto para ser vendido. Será?<br>
+							<a href="#artigo2" class="artigo__link">Continuar lendo o post 2</a>
+						</p>
+					</article>
+				</li>
+				<li class="artigos__item" id="artigo3">
+					<article class="artigo">
+						<img src="img/dicas-acessibilidade.jpg" alt="Homem sendo carregado pela plateia de um show" class="artigo__img">
+						<h3 class="artigo__titulo" id="artigo3__titulo">5 dicas para melhorar a acessibilidade na sua interface</h3>
+						<p>
+							Será que acessibilidade é algo tão complicado que vale a pena abrir mão de 25% dos usuários? Normalmente, acessibilidade não é algo muito aplicado pela WEB, infelizmente, por falta de informação.<br>
+							<a href="#artigo3" class="artigo__link">Continuar lendo o post 3</a>
+						</p>
+					</article>
+				</li>
+			</ul>
+			<nav>
+				<ul class="artigos__slider">
+					<li><a href="#artigo1" data-sliderItem="0" class="artigos__slider-item artigos__slider-item--ativo" aria-labelledby="artigo1__titulo">Notícia 1</a></li>
+					<li><a href="#artigo2" data-sliderItem="1" class="artigos__slider-item" aria-labelledby="artigo2__titulo">Notícia 2</a></li>
+					<li><a href="#artigo3" data-sliderItem="2" class="artigos__slider-item" aria-labelledby="artigo3__titulo">Notícia 3</a></li>
+				</ul>
+			</nav>
+		</section>
+		<!-- Fim seção blog -->
   </main>
 
   <script src="js/destaques_newsletter.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 </html>
