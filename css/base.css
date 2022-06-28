@@ -28,27 +28,27 @@ body {
 
 .pularNavegacao {
 	display: block;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  color: transparent;
-  position: absolute;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	color: transparent;
+	position: absolute;
 }
 
 .pularNavegacao:focus {
-  transition: 0.5s;
-  text-indent: 10px;
-  white-space: initial;
-  overflow: initial;
-  width: 350px;
-  height: 25px;
-  font-size: 18px;
-  color: #fff;
+	transition: 0.5s;
+	text-indent: 10px;
+	white-space: initial;
+	overflow: initial;
+	width: 350px;
+	height: 25px;
+	font-size: 18px;
+	color: #fff;
 	text-decoration: none;
-  background-color: #B72E2E;
-  font-weight: 700;
+	background-color: #B72E2E;
+	font-weight: 700;
 }
 
 .container {
@@ -105,4 +105,18 @@ body {
 	margin-bottom: 1.25rem;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+@media screen 
+and (min-width: 320px)
+and (max-width: 950px) {
+	.nav__lista {
+		flex-wrap: wrap;
+		align-content: center;
+		gap: 10px 30px
+	}
+
+	.nav__item {
+		margin: 0 auto;
+	}
 }

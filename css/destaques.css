@@ -48,3 +48,19 @@
     color: var(--branco);
     background-color: var(--vermelho-escuro);
 }
+
+@media screen 
+and (min-width: 320px)
+and (max-width: 950px) {
+    .destaques__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 540px;
+        margin: 1rem auto;
+    }
+    
+    .destaque__img {
+        height: auto;
+    }
+}

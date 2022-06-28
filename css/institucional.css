@@ -45,3 +45,22 @@
 .institucional__video {
     align-self: flex-end;
 }
+
+@media screen 
+and (min-width: 320px)
+and (max-width: 950px) {
+    .institucional__conteudo {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .institucional__video-container {
+        display: block;
+        margin: 0 auto;
+    }
+    .institucional__video {
+        width: auto;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
