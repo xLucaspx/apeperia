@@ -55,6 +55,32 @@ body {
 	padding: 3.5rem 5%;
 }
 
+.logo-apeperia:hover, .logo-apeperia:focus {
+	transition: 0.5s ease-in-out;
+	transform: scale(1.1);
+}
+
+.nav__lista {
+    display: flex;
+    margin-top: 15px;
+}
+
+.nav__item {
+    margin: 0 15px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.1rem;
+}
+
+.nav__link:hover, .nav__link:focus {
+    transition: 0.5s;
+    opacity: 60%;
+    text-decoration: underline;
+}
+
 .btnPadrao {
 	text-align: center;
 	width: 100%;

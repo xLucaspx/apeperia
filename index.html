@@ -25,22 +25,23 @@
 	<link rel="stylesheet" href="css/blog.css">
 	<link rel="stylesheet" href="css/institucional.css">
 	<link rel="stylesheet" href="css/contato.css">
+	<link rel="stylesheet" href="css/rodape.css">
 </head>
 <body>
 	<a href="#conteudoPrincipal" class="pularNavegacao">Pular para o conteúdo principal</a>
 	<header class="cabecalho container">
-		<a href="index.html" class="cabecalho__logo" title="Home da Apeperia">
-			<img src="img/logo-apeperia.svg" alt="Logo da Apeperia" width="205" height="59">
+		<a href="index.html" title="Home da Apeperia">
+			<img src="img/logo-apeperia.svg" alt="Logo da Apeperia" width="205" height="59" class="logo-apeperia">
 		</a>
 
-		<nav class="cabecalho__nav">
-			<ul class="cabecalho__lista">
-				<li class="cabecalho__item"><a href="#secaoSobre" class="cabecalho__link">Sobre</a></li>
-				<li class="cabecalho__item"><a href="#secaoPlanos" class="cabecalho__link">Planos</a></li>
-				<li class="cabecalho__item"><a href="#secaoDestaques" class="cabecalho__link">Destaques</a></li>
-				<li class="cabecalho__item"><a href="#secaoBlog" class="cabecalho__link">Blog</a></li>
-				<li class="cabecalho__item"><a href="#secaoInstitucional" class="cabecalho__link">Institucional</a></li>
-				<li class="cabecalho__item"><a href="#secaoContato" class="cabecalho__link">Contato</a></li>
+		<nav class="nav">
+			<ul class="nav__lista">
+				<li class="nav__item"><a href="#secaoSobre" class="nav__link">Sobre</a></li>
+				<li class="nav__item"><a href="#secaoPlanos" class="nav__link">Planos</a></li>
+				<li class="nav__item"><a href="#secaoDestaques" class="nav__link">Destaques</a></li>
+				<li class="nav__item"><a href="#secaoBlog" class="nav__link">Blog</a></li>
+				<li class="nav__item"><a href="#secaoInstitucional" class="nav__link">Institucional</a></li>
+				<li class="nav__item"><a href="#secaoContato" class="nav__link">Contato</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -56,7 +57,7 @@
 				Conheça os planos
 			</a>
 		</section> 
-<!-- Fim seção apresentação -->
+		<!-- Fim seção apresentação -->
 		<section class="diferenciais container">
 			<ul class="diferenciais__lista">
 				<li class="diferenciais__item diferenciais__item--tempo">
@@ -195,9 +196,9 @@
 			</ul>
 			<nav>
 				<ul class="artigos__slider">
-					<li><a href="#artigo1" data-sliderItem="0" class="artigos__slider-item artigos__slider-item--ativo" aria-labelledby="artigo1__titulo">Notícia 1</a></li>
-					<li><a href="#artigo2" data-sliderItem="1" class="artigos__slider-item" aria-labelledby="artigo2__titulo">Notícia 2</a></li>
-					<li><a href="#artigo3" data-sliderItem="2" class="artigos__slider-item" aria-labelledby="artigo3__titulo">Notícia 3</a></li>
+					<li><a href="#artigo1" data-sliderItem="0" class="artigos__slider-item artigos__slider-item--ativo">Notícia 1</a></li>
+					<li><a href="#artigo2" data-sliderItem="1" class="artigos__slider-item">Notícia 2</a></li>
+					<li><a href="#artigo3" data-sliderItem="2" class="artigos__slider-item">Notícia 3</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -212,16 +213,16 @@
 						Vila Mariana, São Paulo
 						<article class="institucional__contato">
 							<p>
-								<a href="tel:+551155712751" class="institucional__contato-telefone">(11) 5571-2751</a>
+								<a href="tel:+551155712751" class="institucional__contato-telefone" title="Telefone" aria-label="Telefone">(11) 5571-2751</a>
 								ou
-								<a href="mailto:contato@apeperia.com" class="institucional__contato-email">contato@apeperia.com</a>
+								<a href="mailto:contato@apeperia.com" class="institucional__contato-email" title="Email" aria-label="Email">contato@apeperia.com</a>
 							</p>
 						</article>
 					</adress>
 				</div>
-				<!-- <video src="img/video-institucional/formacao-java.mp4" width="450" height="310" class="institucional__video" controls>
+				<video src="img/video-institucional/formacao-java.mp4" width="450" height="310" class="institucional__video" controls title="Video institucional Apeperia"		>
 					<track src="img/video-institucional/legenda-portugues-brasil.vtt" kind="subtitles" srclang="pt-br" label="Português (Brasil)" default>
-				</video> -->
+				</video>
 			</div>
 		</section>
 		<!-- Fim seção institucional -->
@@ -278,7 +279,34 @@
 				</div>
 			</form>
 		</section>
+		<!-- Fim seção contato -->
   </main>
+  <footer class="rodape container">
+	<a href="index.html" title="Home da Apeperia">
+		<img src="img/logo-apeperia.svg" alt="Logo da Apeperia" width="205" height="59" class="logo-apeperia">
+	</a>
+
+		<ul class="rodape__social">
+			<li><a href="https://www.instagram.com/luacspaz/" class="social__link social__link--instagram" title="@luacspaz | Instagram">	</a></li>
+			<li><a href="https://github.com/xLucaspx" class="social__link social__link--github" title="xLucaspx | GitHub"></a></li>
+			<li><a href="https://www.linkedin.com/in/xlucaspx/" class="social__link social__link--linkedin" title="Lucas da Paz | LinkedIn"></a></li>
+		</ul>
+
+		<nav class="nav">
+			<ul class="nav__lista">
+				<li class="nav__item"><a href="#secaoSobre" class="nav__link">Sobre</a></li>
+				<li class="nav__item"><a href="#secaoPlanos" class="nav__link">Planos</a></li>
+				<li class="nav__item"><a href="#secaoDestaques" class="nav__link">Destaques</a></li>
+				<li class="nav__item"><a href="#secaoBlog" class="nav__link">Blog</a></li>
+				<li class="nav__item"><a href="#secaoInstitucional" class="nav__link">Institucional</a></li>
+				<li class="nav__item"><a href="#secaoContato" class="nav__link">Contato</a></li>
+			</ul>
+		</nav>
+
+		<div class="credito">
+			<h6>&copy; 2022. Desenvolvido por Lucas da Paz durante estudos na <a href="https://www.alura.com.br/">Alura</a></h6>
+		</div>
+  </footer>
 
   <script src="js/destaques_newsletter.js"></script>
   <script src="js/carousel.js"></script>
