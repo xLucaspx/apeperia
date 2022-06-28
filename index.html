@@ -20,6 +20,8 @@
 	<link rel="stylesheet" href="css/diferenciais.css">
 	<link rel="stylesheet" href="css/sobre.css">
 	<link rel="stylesheet" href="css/planos.css">
+	<link rel="stylesheet" href="css/destaques.css">
+	<link rel="stylesheet" href="css/destaques_newsletter.css">
 </head>
 <body>
 	<a href="#conteudoPrincipal" class="pularNavegacao">Pular para o conteúdo principal</a>
@@ -121,6 +123,40 @@
 			</div>
 		</section>
 		<!-- Fim seção planos -->
+		<section class="destaques container" id="secaoDestaques">
+			<h2 class="destaques__titulo tituloPadrao">Destaques</h2>
+			<a href="#secaoDestaques" class="destaques__link" aria-labelledby="destaque1__titulo">
+				<figure class="destaque">
+					<img src="img/comecando-criar-logotipo.png" alt="Ferramentas de um designer, ilustração" width="540" height="265" class="destaque__img">
+					<figcaption class="destaque__titulo" id="destaque1__titulo">Conheça as primeiras etapas na criação de um logotipo</figcaption>
+				</figure>
+			</a>
+
+			<a href="#secaoDestaques" class="destaques__link" aria-labelledby="destaque2__titulo">
+				<figure class="destaque">
+					<img src="img/dicas-fotografia.png" alt="Mulher mostrando fotos para um homem em uma camêra fotográfica profissional" width="540" height="265" class="destaque__img">
+					<figcaption class="destaque__titulo" id="destaque2__titulo">Veja dicas de como fotografar usando seu celular</figcaption>
+				</figure>
+			</a>
+
+			<button class="destaques__btn btnPadrao">Receber destaques por email</button>
+
+			<div class="destaques__newsletter">
+				<div class="destaques__newsletter__body">
+					<button class="destaques__newsletter__btn-fechar">X</button>
+					<h2 class="newsletter__titulo">News sem spam</h2>
+					<h3 class="newsletter__texto">Assine a newsletter para receber nosso conteúdo!</h3>
+					<form class="newsletter__form">
+						<label for="destaques__newsletter__email" class="destaques__newsletter__label">Email:</label>
+						<input type="email" id="destaques__newsletter__email" class="destaques__newsletter__input" placeholder="Digite seu email...">
+						<button class="destaques__newsletter__btn">Assinar newsletter</button>
+					</form>
+				</div>
+				<div class="destaques__newsletter-overlay"></div>
+			</div>
+		</section>
   </main>
+
+  <script src="js/destaques_newsletter.js"></script>
 </body>
 </html>

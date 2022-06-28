@@ -1,0 +1,124 @@
+.destaques__newsletter {
+    display: none;
+} 
+
+.destaques__newsletter--aberto {
+    display: block;
+}
+
+.destaques__newsletter__body {
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-escuro);
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: inline-block;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    transition: 0.5s ease-in-out;
+    color: var(--cor-fonte-escura);
+    width: 535px;
+    text-align: left;
+}
+
+.destaques__newsletter__btn-fechar {
+    position: absolute;
+    background-color: transparent;
+    transform: translate(50%, 50%) scale(1.4);
+    top: -5px;
+    right: 25px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border: 1px solid;
+    overflow: hidden;
+    color: transparent;
+    font-size: 0;
+}
+
+.destaques__newsletter__btn-fechar::before {
+    content: 'x';
+    color: #666;
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.destaques__newsletter__btn-fechar:hover::before, .destaques__newsletter__btn-fechar:focus::before {
+    transition: 0.5s;
+    color: #ce3434;  
+    cursor: pointer;
+}
+
+.newsletter__titulo {
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.newsletter__texto {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter__form {
+    display: flex;
+    gap: 10px
+}
+
+.destaques__newsletter__label {
+    position: absolute;
+    z-index: -1;
+    left: -9999px;
+}
+
+.destaques__newsletter__input {
+    border-radius: 5px;
+    border: 1px solid var(--cinza-escuro);
+    padding: 10px;
+    width: auto;
+    min-width: 250px;
+    flex-grow: 4;
+}
+
+.destaques__newsletter__btn {
+    text-indent: -9999px;
+    border-radius: 5px;
+    border: 1px solid var(--vermelho-escuro);
+    padding: 10px;
+    background: url("../img/email.png") no-repeat center; 
+    transition: 0.5s ease-in-out;
+    flex-grow: 1;
+}
+
+.destaques__newsletter__btn:hover, .destaques__newsletter__btn:focus {
+    background-color: var(--vermelho-escuro);
+    cursor: pointer;
+    background-image: url("../img/email-hover.png");
+}
+
+.destaques__newsletter-overlay {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.destaques__newsletter-overlay + .destaques__newsletter {
+    display: block;
+    transform: translate(-50%, -50%);
+}
