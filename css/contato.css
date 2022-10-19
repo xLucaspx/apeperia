@@ -1,5 +1,6 @@
 .contato {
     text-align: center;
+    box-sizing: border-box;
 }
 
 .contato__form-legend {
@@ -13,7 +14,6 @@
 .contato__campo {
     margin: 1rem auto;
     max-width: 600px;
-    position: relative;
 }
 
 .contato__campo label, 
@@ -36,12 +36,13 @@
     color: var(--plano-mega);
 }
 
-
 .contato__campo__entrada, .input--desabilitado {
     font-size: 1rem;
     padding: 0.5rem;
     padding-right: calc(0.5rem + 40px);
     min-height: 45px;
+    max-width: 600px;
+    box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid var(--cinza-medio);
     outline: 0;
@@ -123,14 +124,7 @@ textarea {
 and (min-width: 320px)
 and (max-width: 950px) {
     .contato__form {
-        width: 90%;
         box-sizing: border-box;
-    }
-
-    .contato__campo label, 
-    .contato__campo input, 
-    .contato__campo textarea {
-        width: 90%;
     }
 
     .contato__campo label {

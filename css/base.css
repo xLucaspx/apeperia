@@ -22,6 +22,10 @@
 	--plano-mega: #E33B3B;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
 	line-height: 1.5;
