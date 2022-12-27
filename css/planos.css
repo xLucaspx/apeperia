@@ -46,6 +46,7 @@
     text-align: left;
     color: var(--cor-fonte);
     padding-left: 35px;
+    list-style: disc;
 }
 
 .plano__btn {
@@ -60,7 +61,7 @@
     margin: 30px auto;
 }
 
-.plano__btn:hover, .plano__btn:active {
+.plano__btn:hover, .plano__btn:focus {
     color: var(--branco);
 }
 
