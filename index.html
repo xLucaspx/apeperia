@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="css/rodape.css">
 </head>
 <body>
+	<div id="conteudo_fora_dialog">
 	<a href="#conteudoPrincipal" class="pularNavegacao">Pular para o conteúdo principal</a> <!-- Link acessível com TAB -->
 
 	<header class="cabecalho container">
@@ -160,23 +161,6 @@
 			</a>
 
 			<button class="destaques__btn btnPadrao">Receber destaques por email</button>
-
-			<div class="destaques__newsletter">
-				<div class="destaques__newsletter__body">
-
-					<button class="destaques__newsletter__btn-fechar">X</button>
-
-					<h2 class="newsletter__titulo">News sem spam</h2>
-					<h3 class="newsletter__texto">Assine a newsletter para receber nosso conteúdo!</h3>
-
-					<form class="newsletter__form">
-						<label for="destaques__newsletter__email" class="destaques__newsletter__label">Email:</label>
-						<input type="email" id="destaques__newsletter__email" class="destaques__newsletter__input" placeholder="Digite seu email...">
-						<button class="destaques__newsletter__btn">Assinar newsletter</button>
-					</form>
-				</div>
-				<div class="destaques__newsletter-overlay"></div>
-			</div>
 		</section>
 		<!-- Fim seção destaques -->
 		<section class="blog container" id="secaoBlog">
@@ -352,9 +336,30 @@
 			<h6>&copy; 2022. Desenvolvido por Lucas da Paz durante estudos na <a href="https://www.alura.com.br/">Alura</a></h6>
 		</div>
   </footer>
-  <!-- Fim rodapé -->
-  <script src="js/destaques_newsletter.js"></script>
-  <script src="js/carousel.js"></script>
-  <script src="js/form.js"></script>
+	<!-- Fim rodapé -->
+	</div>
+	<!-- Fim conteúdo fora do dialog -->
+	<div class="destaques__newsletter" role="dialog" aria-labelledby="titulo-dialog">
+		<div class="destaques__newsletter__body">
+	
+			<h2 class="newsletter__titulo" id="titulo-dialog">News sem spam</h2>
+			<h3 class="newsletter__texto">Assine a newsletter para receber nosso conteúdo!</h3>
+	
+			<form class="newsletter__form">
+				<label for="destaques__newsletter__email" class="destaques__newsletter__label">Email:</label>
+				<input type="email" id="destaques__newsletter__email" class="destaques__newsletter__input"
+					placeholder="Digite seu email...">
+				<button class="destaques__newsletter__btn" type="submit">Assinar newsletter</button>
+			</form>
+	
+			<button class="destaques__newsletter__btn-fechar" type="button" aria-label="Fechar janela modal">Fechar modal</button>
+		</div>
+		<div class="destaques__newsletter-overlay"></div>
+	</div>
+	<!-- Fim dialog -->
+	<script src="js/inert.js"></script>
+	<script src="js/destaques_newsletter.js"></script>
+	<script src="js/carousel.js"></script>
+	<script src="js/form.js"></script>
 </body>
 </html>
