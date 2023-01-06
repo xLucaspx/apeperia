@@ -8,7 +8,7 @@
 }
 
 .artigos__item {
-    display: inline-block;
+    display: none;
     text-align: center;
     margin: 0 auto;
     width: 100%;

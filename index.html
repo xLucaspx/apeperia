@@ -165,9 +165,10 @@
 		<!-- Fim seção destaques -->
 		<section class="blog container" id="secaoBlog">
 			<h2 class="blog__titulo tituloPadrao">Blog</h2>
+			<h3 class="hidden" id="titulo-blog">Lista de artigos mais visualizados</h3>
 
-			<ul class="blog__artigos">
-				<li class="artigos__item" id="artigo1">
+			<ol class="blog__artigos">
+				<li class="artigos__item" id="artigo1" data-artigo="1">
 					<article class="artigo">
 						<img src="img/10-aplicativos-mais-baixados.png" alt width="815" height="194" class="artigo__img">
 						<h3 class="artigo__titulo" id="artigo1__titulo">Conheça os 10 aplicativos mais baixados no ano de 2021</h3>
@@ -177,7 +178,7 @@
 						</p>
 					</article>
 				</li>
-				<li class="artigos__item" id="artigo2">
+				<li class="artigos__item" id="artigo2" data-artigo="2">
 					<article class="artigo">
 						<img src="img/ux-usabilidade.jpg" alt width="815" height="194" class="artigo__img">
 						<h3 class="artigo__titulo" id="artigo2__titulo">Usabilidade: entenda os benefícios de treinar sua equipe em UX</h3>
@@ -187,7 +188,7 @@
 						</p>
 					</article>
 				</li>
-				<li class="artigos__item" id="artigo3">
+				<li class="artigos__item" id="artigo3" data-artigo="3">
 					<article class="artigo">
 						<img src="img/dicas-acessibilidade.jpg" alt width="815" height="194" class="artigo__img">
 						<h3 class="artigo__titulo" id="artigo3__titulo">5 dicas para melhorar a acessibilidade na sua interface</h3>
@@ -197,12 +198,12 @@
 						</p>
 					</article>
 				</li>
-			</ul>
+			</ol>
 			<nav>
 				<ul class="artigos__slider">
-					<li><a href="#artigo1" data-sliderItem="0" class="artigos__slider-item artigos__slider-item--ativo" role="button">Notícia 1</a></li>
-					<li><a href="#artigo2" data-sliderItem="1" class="artigos__slider-item" role="button">Notícia 2</a></li>
-					<li><a href="#artigo3" data-sliderItem="2" class="artigos__slider-item" role="button">Notícia 3</a></li>
+					<li><a href="#artigo1" data-sliderItem="1" class="artigos__slider-item artigos__slider-item--ativo" role="button">Notícia 1 <span class="hidden" id="indicador-slide">slide atual</span></a></li>
+					<li><a href="#artigo2" data-sliderItem="2" class="artigos__slider-item" role="button">Notícia 2</a></li>
+					<li><a href="#artigo3" data-sliderItem="3" class="artigos__slider-item" role="button">Notícia 3</a></li>
 				</ul>
 			</nav>
 		</section>
