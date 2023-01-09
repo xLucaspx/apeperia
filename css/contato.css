@@ -89,6 +89,7 @@ textarea {
     content: "";
     vertical-align: middle;
     display: inline-block;
+    box-sizing: border-box;
     width: 20px;
     height: 20px;
     text-align: center;
@@ -101,11 +102,17 @@ textarea {
 }
 
 .contato__checkbox:checked + .contato__label-receber-emails::before {
-    content: "x";
+    content: "\2713";
     font-weight: 700;
     color: var(--branco);
     background-color: var(--azul-medio);
-    border-color: var(--cinza-escuro);
+    border-color: transparent;
+}
+
+.contato__checkbox:hover + .contato__label-receber-emails::before,
+.contato__checkbox:focus + .contato__label-receber-emails::before {
+    border: 2px solid var(--cor-fonte-escura);
+    cursor: pointer;
 }
 
 .contato__btn {

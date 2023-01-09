@@ -237,75 +237,89 @@
 		<!-- Fim seção institucional -->
 		<section class="contato container" id="secaoContato">
 			<h2 class="contato__titulo tituloPadrao">Contato</h2>
-
+		
 			<form class="contato__form">
-				<p class="contato__form-legend">
-					Oi, tudo bem? Fale com a gente!
-					Preencha seus dados e sua mensagem:
-				</p>
-
-				<div class="contato__campo contato__campo-nome">
-					<label for="contato__nome">Nome</label>
-					<input type="text" id="contato__nome" class="contato__campo__entrada" placeholder="Digite seu nome" data-tipo="nome" required>
-					<span class="contato__erro"></span>
-				</div>
-
-				<div class="contato__campo contato__campo-email">
-					<label for="contato__email">Email</label>
-					<input type="email" id="contato__email" class="contato__campo__entrada" placeholder="Digite seu email" data-tipo="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" title="Ex.: contato@email.com" required>
-					<span class="contato__erro"></span>
-				</div>
-
-				<div class="contato__campo contato__campo-telefone">
-					<label for="contato__telefone">Telefone</label>
-					<input type="tel" id="contato__telefone" class="contato__campo__entrada" placeholder="(51) 99898-9898" data-tipo="telefone" pattern="^[(]?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])[)]? ?(?:[2-8]|9[1-9])[0-9]{3}[-]? ?[0-9]{4}$" title="Inclua o ddd antes do número. Ex.: (51) 99898-9898" required>
-					<span class="contato__erro"></span>
-				</div>
-
-				<div class="contato__campo contato__campo-cep">
-					<label for="contato__cep">CEP</label>
-					<input type="text" id="contato__cep" class="contato__campo__entrada" placeholder="91234-000" data-tipo="cep" pattern="[\d]{5}-?[\d]{3}" title="Ex.: 91234-000" required>
-					<span class="contato__erro"></span>
-				</div>
-
-				<div class="contato__campo contato__campo-endereco">
-					<label for="contato__endereco">Endereço</label>
-					<input type="text" class="input--desabilitado" id="contato__endereco" placeholder="Endereço" data-tipo="endereco" readonly required>
-					<span class="contato__erro"></span>
-				</div>
-
-				<div class="contato__campo contato__campo-bairro">
-					<label for="contato__bairro">Bairro</label>
-					<input type="text" class="input--desabilitado" id="contato__bairro" placeholder="Bairro" data-tipo="bairro" readonly required>
-					<span class="contato__erro"></span>
-				</div>
-
-				<div class="contato__campo contato__campo-cidade">
-					<label for="contato__cidade">Cidade</label>
-					<input type="text" class="input--desabilitado" id="contato__cidade" placeholder="Cidade" data-tipo="cidade" readonly required>
-					<span class="contato__erro"></span>
-				</div>
-
-				<div class="contato__campo contato__campo-estado">
-					<label for="contato__estado">Estado</label>
-					<input type="text" class="input--desabilitado" id="contato__estado" placeholder="Estado" data-tipo="estado" readonly required>
-					<span class="contato__erro"></span>
-				</div>
-
-				<div class="contato__campo contato__campo-mensagem">
-					<label for="contato__mensagem">Mensagem</label>
-					<textarea name="mensagem" cols="30" rows="10" id="contato__mensagem" class="contato__campo__entrada" placeholder="Digite sua mensagem..." data-tipo="mensagem" required></textarea>
-					<span class="contato__erro"></span>
-				</div>
-
-				<div class="contato__campo contato__campo-checkbox">
-					<input type="checkbox" checked value="receberDestaques" class="contato__checkbox" id="contato__receber-emails">
-					<label for="contato__receber-emails" class="contato__label-receber-emails">Receber destaques por email</label>
-				</div>
-
-				<div class="contato__campo">
-					<button type="submit" class="contato__btn btnPadrao">Entrar em contato</button>
-				</div>
+				<fieldset>
+					<legend class="contato__form-legend">
+						Oi, tudo bem? Fale com a gente!
+						Preencha seus dados e sua mensagem:
+					</legend>
+		
+					<div class="contato__campo contato__campo-nome">
+						<label for="contato__nome">Nome</label>
+						<input type="text" id="contato__nome" class="contato__campo__entrada" placeholder="Digite seu nome"
+							data-tipo="nome" required>
+						<span class="contato__erro"></span>
+					</div>
+		
+					<div class="contato__campo contato__campo-email">
+						<label for="contato__email">Email</label>
+						<input type="email" id="contato__email" class="contato__campo__entrada" placeholder="Digite seu email"
+							data-tipo="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" title="Ex.: contato@email.com"
+							required>
+						<span class="contato__erro"></span>
+					</div>
+		
+					<div class="contato__campo contato__campo-telefone">
+						<label for="contato__telefone">Telefone</label>
+						<input type="tel" id="contato__telefone" class="contato__campo__entrada" placeholder="(51) 99898-9898"
+							data-tipo="telefone"
+							pattern="^[(]?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])[)]? ?(?:[2-8]|9[1-9])[0-9]{3}[-]? ?[0-9]{4}$"
+							title="Inclua o ddd antes do número. Ex.: (51) 99898-9898" required>
+						<span class="contato__erro"></span>
+					</div>
+		
+					<div class="contato__campo contato__campo-cep">
+						<label for="contato__cep">CEP</label>
+						<input type="text" id="contato__cep" class="contato__campo__entrada" placeholder="91234-000" data-tipo="cep"
+							pattern="[\d]{5}-?[\d]{3}" title="Ex.: 91234-000" required>
+						<span class="contato__erro"></span>
+					</div>
+		
+					<div class="contato__campo contato__campo-endereco">
+						<label for="contato__endereco">Endereço</label>
+						<input type="text" class="input--desabilitado" id="contato__endereco" placeholder="Endereço"
+							data-tipo="endereco" readonly required>
+						<span class="contato__erro"></span>
+					</div>
+		
+					<div class="contato__campo contato__campo-bairro">
+						<label for="contato__bairro">Bairro</label>
+						<input type="text" class="input--desabilitado" id="contato__bairro" placeholder="Bairro" data-tipo="bairro"
+							readonly required>
+						<span class="contato__erro"></span>
+					</div>
+		
+					<div class="contato__campo contato__campo-cidade">
+						<label for="contato__cidade">Cidade</label>
+						<input type="text" class="input--desabilitado" id="contato__cidade" placeholder="Cidade" data-tipo="cidade"
+							readonly required>
+						<span class="contato__erro"></span>
+					</div>
+		
+					<div class="contato__campo contato__campo-estado">
+						<label for="contato__estado">Estado</label>
+						<input type="text" class="input--desabilitado" id="contato__estado" placeholder="Estado" data-tipo="estado"
+							readonly required>
+						<span class="contato__erro"></span>
+					</div>
+		
+					<div class="contato__campo contato__campo-mensagem">
+						<label for="contato__mensagem">Mensagem</label>
+						<textarea name="mensagem" cols="30" rows="10" id="contato__mensagem" class="contato__campo__entrada"
+							placeholder="Digite sua mensagem..." data-tipo="mensagem" required></textarea>
+						<span class="contato__erro"></span>
+					</div>
+		
+					<div class="contato__campo contato__campo-checkbox">
+						<input type="checkbox" checked value="receberDestaques" class="contato__checkbox" id="contato__receber-emails">
+						<label for="contato__receber-emails" class="contato__label-receber-emails">Receber destaques por email</label>
+					</div>
+		
+					<div class="contato__campo">
+						<button type="submit" class="contato__btn btnPadrao">Entrar em contato</button>
+					</div>
+				</fieldset>
 			</form>
 		</section>
 		<!-- Fim seção contato -->
